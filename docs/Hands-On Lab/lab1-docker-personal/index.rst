@@ -1,4 +1,4 @@
-中大型团队：使用VSTS/TFS和Docker Swarm在Azure上搭建DevOps持续发布管道
+个人开发者或小团队: 使用Docker for Windows + Docker Machine 构建小型企业DevOps方案
 ==========================================================================================
 
 .. |stub-icon| unicode:: U+1F527
@@ -17,23 +17,20 @@
 ----------------------------
 
     - 编码并使用本地容器环境进行调试
-    - 提交代码到git
-    - 开发人员触发CI/CD过程
-    - TFS 驱动构建代理执行编译，打包
-    - 构建引擎从git获取代码和配置
-    - 将容器镜像上传到私有仓库
-    - 将容器镜像部署到不同个环境
-    - QA/管理人员控制版本升级过程
+    - 使用本地Docker Tools构建容器镜像，并推送到私有仓库
+    - 使用Docker Machine在Azure中创建容器主机
+    - 部署容器到Azure中的容器主机
 
-.. figure:: images/docker-enterprise-solution.png
+.. figure:: images/docker-personal-solution.png
 
 
 .. toctree::
    :titlesonly:
 
-   swarm-azure-arm-template-deployment
-   swarm-learn-the-basics-of-swarm
-   connect-to-tfs-teamproject
-   create-continous-integration-job
-   create-continous-deployment-pipeline
+   config-local-environment
+   debug-dotnet-core-webapp-in-docker
+   azure-create-docker-host
+   azure-create-docker-registry
+   build-docker-image-push-deploy
+   
    
