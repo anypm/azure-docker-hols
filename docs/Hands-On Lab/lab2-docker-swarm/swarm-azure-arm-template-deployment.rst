@@ -63,9 +63,7 @@ ssh-keygen -C {emailAddress}
 
 ssh密钥生成完成后，在命令行中输入
 
-.. code-block: bash
-
-    cat ~\\.ssh\\id_rsa.pub 
+cat ~\\.ssh\\id_rsa.pub 
 
 
 并将显示出来的内容全部复制到模版配置页面中的SSHPUBLICKEY字段中。
